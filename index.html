@@ -7,11 +7,29 @@
   </head>
   <body>
     <p>Введите число от 1 до 10 и мы его угадаем</p>
-		<input id="input">
+    <input id="input" />
     <button id="btn">Угадать!</button>
     <div></div>
     <p id="text"></p>
+    <h1 class="title hidden">ПАСХАЛКО!!!</h1>
 
-		<script src="./js/main.js"></script>
-	</body>
+    <style>
+      .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        font-size: 150px;
+        color: red;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>
