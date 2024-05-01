@@ -11,16 +11,6 @@ btn.addEventListener("click", () => {
     setTimeout(() => {
       text.innerHTML = "Вы загадали число " + input;
     }, 3000);
-  } else if (input == 1488) {
-    const audio = new Audio("../audio/sirena.mp3");
-    audio.play();
-
-    const title = document.querySelector(".title");
-    title.classList.toggle("hidden");
-
-    setTimeout(() => {
-      title.classList.toggle("hidden");
-    }, 15000)
   } else if (input < 1) {
     text.innerHTML = "Вы загадали число меньше 1";
   } else if (input > 10) {
